@@ -226,7 +226,7 @@ HTML_TEMPLATE = """
                     if (currentCode > 999999) currentCode = 0;
                     let codeStr = String(currentCode).padStart(6, '0');
                     
-                    batchHtml += `<div class="text-red-500 font-bold tracking-wider pb-0.5">> TESTING 6-DIGIT CODE: [ <span class="text-white">${codeStr}</span> ] -> NO MATCH: <span class="text-red-600">FAILED / INVALID</span></div>`;
+                    batchHtml += `<div class="text-red-500 font-bold tracking-wider pb-0.5">> TESTING 6-DIGIT CODE: [ <span class="text-white">${codeStr}</span> ] -> NO MATCH: <span class="text-red-600"></span></div>`;
                     currentCode += Math.floor(Math.random() * 7) + 1;
                 }
 
